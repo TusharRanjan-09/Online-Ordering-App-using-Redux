@@ -3,9 +3,6 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
 
 function Products(props) {
-    // console.warn(props.products)
-    // console.warn(props)
-
     return (
         <ScrollView >
             {props.products.map((item, index) => {
@@ -19,7 +16,6 @@ function Products(props) {
                                 <Text style={{color: 'red', fontSize:18}}>{item.price}</Text>
                                 <Text style={{color: 'grey', fontSize:16}}>{item.note}</Text>
                             </View>
-
                         </TouchableOpacity>
                         </View>
                     </View>
@@ -28,5 +24,4 @@ function Products(props) {
         </ScrollView>
     );
 }
-
 export default Products;
